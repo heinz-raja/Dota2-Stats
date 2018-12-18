@@ -21,7 +21,12 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.heinzraja.dotastats"
+
+    },
+    "android": {
+      "package": "com.heinzraja.snapp"
     }
   }
 }

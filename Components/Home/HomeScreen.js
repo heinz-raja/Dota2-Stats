@@ -190,7 +190,7 @@ class HomeScreen extends Component {
 	render() {
 		const { navigate } = this.props.navigation;
 		
-		if(!this.state.isLoading&&this.state.playerObjects.length==0){
+		if(this.state.isLoading&&(!this.state.playerObjects||this.state.playerObjects.length==0)){
 			return(
 				<View style={{flex:1,justifyContent:'center',alignItems:'center',backgroundColor:'#333333'}}>
 					<Text style={{fontSize:18,color:'#FFF'}}>Add some friends to get started</Text>
